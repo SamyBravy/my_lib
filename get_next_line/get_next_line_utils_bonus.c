@@ -6,7 +6,7 @@
 /*   By: sdell-er <sdell-er@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 16:43:25 by sdell-er          #+#    #+#             */
-/*   Updated: 2024/01/17 16:51:33 by sdell-er         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:13:06 by sdell-er         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ char	*ft_strjoin2(char **s1, char *s2)
 
 	l1 = ft_strlen2(*s1);
 	l2 = ft_strlen2(s2);
-	new = malloc(sizeof(char) * (l1 + l2 + 1));
+	new = malloc (sizeof(char) * (l1 + l2 + 1));
 	if (!new)
 	{
 		if (*s1 != NULL)
