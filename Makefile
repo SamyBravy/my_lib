@@ -6,7 +6,7 @@
 #    By: sdell-er <sdell-er@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/17 15:44:24 by sdell-er          #+#    #+#              #
-#    Updated: 2024/08/02 13:26:06 by sdell-er         ###   ########.fr        #
+#    Updated: 2024/08/02 13:57:29 by sdell-er         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,21 +26,18 @@ SRCS = ./Libft/ft_isascii.c ./Libft/ft_memcpy.c ./Libft/ft_putstr_fd.c ./Libft/f
 	./ft_printf/ft_printf.c ./ft_printf/ft_putchar.c ./ft_printf/ft_putstr.c ./ft_printf/ft_putnbr.c ./ft_printf/ft_putexa.c \
 	./get_next_line/get_next_line_bonus.c ./get_next_line/get_next_line_utils_bonus.c
 
-OBJS = $(SRCS:.c=.o)
-
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	@ar rcs $(NAME) $(OBJS)
+$(NAME): $(SRC)
+	@ar rcs $(NAME) $(SRC)
 	@ranlib $(NAME)
-
-%.o: %.c my_lib.h
-	@$(CC) $(CC_FLAGS) -c -o $@ $<
+	@echo "\e[0;93m[$(NAME)] compiled!\e[0m"
 
 clean:
-	rm -f $(OBJS)
+	@rm -f $(SRC)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+	@echo "\e[0;91m[$(NAME)] deleted!\e[0m"
 
 re: fclean all
