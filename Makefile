@@ -6,11 +6,11 @@
 #    By: sdell-er <sdell-er@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/17 15:44:24 by sdell-er          #+#    #+#              #
-#    Updated: 2024/01/22 15:34:22 by sdell-er         ###   ########.fr        #
+#    Updated: 2024/08/02 13:26:06 by sdell-er         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = my_lib.a
+NAME = libmy_lib.a
 CC = cc
 CC_FLAGS = -Wall -Wextra -Werror
 
