@@ -105,4 +105,11 @@ char		*ft_strjoin3(char *s1, char *s2, char *s3);
 void		ft_free_mat(char **mat);
 void		ft_lstadd_back_int(t_int_list **lst, int content);
 
+int			ft_nbrlen(int n);
+
+double		ft_atof(char *nptr);
+double		ft_pow(double n, int pow);
+
+char		*ft_ftoa(double n);
+
 #endif
