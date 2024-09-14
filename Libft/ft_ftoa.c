@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ftoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: samy_bravy <samy_bravy@student.42.fr>      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 17:11:29 by samy_bravy        #+#    #+#             */
-/*   Updated: 2024/09/14 17:30:52 by samy_bravy       ###   ########.fr       */
+/*   Updated: 2024/09/14 17:44:14 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,15 @@ char	*ft_ftoa(double n)
 		fpart *= 10;
 		i++;
 	}
-	tmp2 = malloc(sizeof(char) * (i + 1));
+	tmp2 = ft_calloc(++i + 1, sizeof(char));
 	if (!tmp2)
 		return (NULL);
-	tmp2[i] = '\0';
 	while (i--)
 	{
 		tmp2[i] = (int)fpart % 10 + '0';
 		fpart /= 10;
 	}
+	tmp2[0] = '.' * (n - (int)n != 0) + '\0' * (n - (int)n == 0);
 	res = ft_strjoin(tmp1, tmp2);
 	return (free(tmp1), free(tmp2), res);
 }
