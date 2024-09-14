@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ftoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: samy_bravy <samy_bravy@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 17:11:29 by samy_bravy        #+#    #+#             */
-/*   Updated: 2024/09/14 17:44:14 by marvin           ###   ########.fr       */
+/*   Updated: 2024/09/14 18:27:25 by samy_bravy       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_ftoa(double n)
 	char	*tmp2;
 
 	tmp1 = ft_itoa((int)n);
-	fpart = n - ft_atof(tmp1);
+	fpart = ft_abs(n - ft_atof(tmp1));
 	i = 0;
 	while (fpart - (int)fpart != 0 && i < 6)
 	{
