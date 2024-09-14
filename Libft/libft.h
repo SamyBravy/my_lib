@@ -109,6 +109,7 @@ int			ft_nbrlen(int n);
 
 double		ft_atof(char *nptr);
 double		ft_pow(double n, int pow);
+double		ft_abs(double n);
 
 char		*ft_ftoa(double n);
 
