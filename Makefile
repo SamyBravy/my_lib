@@ -43,6 +43,7 @@ SRCS = ./Libft/Lists/ft_lstadd_back.c \
 		./Libft/Numbers/ft_itoa.c \
 		./Libft/Numbers/ft_nbrlen.c \
 		./Libft/Numbers/ft_pow.c \
+		./Libft/Numbers/ft_log.c \
 		./Libft/Put_fd/ft_putchar_fd.c \
 		./Libft/Put_fd/ft_putendl_fd.c \
 		./Libft/Put_fd/ft_putnbr_fd.c \
@@ -70,11 +71,15 @@ SRCS = ./Libft/Lists/ft_lstadd_back.c \
 		./Libft/Strings/ft_substr.c \
 		./Libft/Strings/ft_tolower.c \
 		./Libft/Strings/ft_toupper.c \
-		./ft_printf/ft_printf.c \
-		./ft_printf/ft_putchar.c \
-		./ft_printf/ft_putstr.c \
-		./ft_printf/ft_putnbr.c \
-		./ft_printf/ft_putexa.c \
+		./Libft/Strings/ft_pendchar.c \
+		./ft_printf/ft_printf_bonus.c \
+		./ft_printf/ft_char_bonus.c \
+		./ft_printf/ft_hexa_bonus.c \
+		./ft_printf/ft_handle_flags_bonus.c \
+		./ft_printf/ft_nbrs_bonus.c \
+		./ft_printf/ft_parsing_bonus.c \
+		./ft_printf/ft_strs_bonus.c \
+		./ft_printf/ft_void_bonus.c \
 		./get_next_line/get_next_line_bonus.c \
 		./get_next_line/get_next_line_utils_bonus.c
 

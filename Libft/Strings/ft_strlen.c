@@ -21,3 +21,15 @@ size_t	ft_strlen(char const *s)
 		l++;
 	return (l);
 }
+
+int	ft_strlen_int(const char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}

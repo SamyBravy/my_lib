@@ -113,4 +113,11 @@ double		ft_abs(double n);
 
 char		*ft_ftoa(double n);
 
+long		ft_llog(long nb, long base);
+size_t		ft_stlog(size_t nb, size_t base);
+int			ft_ulog(unsigned int nb, unsigned int base);
+int			ft_log(int nb, int base);
+char		*ft_pend_char(char *str, int n, char c, int append);
+int			ft_strlen_int(const char *str);
+
 #endif
